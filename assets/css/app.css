@@ -1,0 +1,511 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* RESET
+--------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	color: #333;
+	font-size: 16px;
+	font-weight: 200;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MAIN STYLE
+--------------------------------------------------------------------- */
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.__section {
+	padding: 120px 0;
+}
+.__container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1270px;
+	width: 95%;
+	z-index: 9;
+}
+.__main-title {
+
+}
+.btn__rsvp {
+	display: block;
+	padding: 20px;
+	margin-top: 50px;
+	margin-left: auto;
+	max-width: 250px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 200;
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid #333;
+	box-sizing: border-box;
+	border-radius: 35px;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	-ms-border-radius: 35px;
+	-o-border-radius: 35px;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+}
+.btn__rsvp:hover {
+	color: #fff;
+	border-color: #987554;
+	background-color: #987554;
+}
+
+/* COMMON
+--------------------------------------------------------------------- */
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mb-15 {
+	margin-bottom: 15px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.__font-regular {
+	display: inline-block;
+	font-weight: 400;
+}
+.__title-logo {
+	margin: 50px 0;
+	font-size: 60px;
+	font-family: 'Italiana', sans-serif;
+	text-align: center;
+}
+.__main-title {
+	padding-bottom: 60px;
+	margin-bottom: 60px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	background: url(../images/title-deco01.png) no-repeat bottom center / 200px;
+}
+.__main-title .__title-sm {
+	display: block;
+	margin-bottom: 10px;
+	color: #888;
+	font-size: 20px;
+}
+.__main-title .__title-lg {
+	color: #987554;
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+}
+.__secondary-title {
+	margin-bottom: 20px;
+	color: #987554;
+	font-size: 30px;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* MAIN VISUAL
+--------------------------------------------------------------------- */
+#__main-visual {
+	position: relative;
+}
+#__main-visual .__main-image {
+	height: 1045px;
+	background: url(../images/ph__abel-lois01.jpg) no-repeat center / cover;
+}
+
+/* RSVP
+--------------------------------------------------------------------- */
+#__rsvp {
+	padding: 50px 0;
+}
+#__rsvp .__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#__rsvp .__container .btn__rsvp {
+	margin-top: 0;
+}
+#__rsvp .__container .__text-rsvp {
+}
+#__rsvp .__container .__text-rsvp .__title-sm {
+	margin-bottom: 15px;
+	font-size: 45px;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+#__rsvp .__container .__text-rsvp p {
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	line-height: 1.4;
+}
+
+/* THE ENTOURAGE
+--------------------------------------------------------------------- */
+#__entourage {
+	background: url(../images/bg__enoturage.jpg) no-repeat center / cover;
+}
+#__entourage .__entourage-wrap {
+}
+#__entourage .__entourage-wrap .__entourage-items:not( :last-child ) {
+	margin-bottom: 50px;
+}
+#__entourage .__entourage-list li {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 200;
+	text-align: center;
+}
+#__entourage .__entourage-list li p {
+	margin-bottom: 5px;
+}
+#__entourage .__entourage-list li p:last-child {
+	margin-bottom: 0;
+}
+#__entourage .__entourage-list li:last-child {
+	margin-bottom: 0;
+}
+#__secondary-sponsors .__entourage-list li {
+	margin-bottom: 30px;
+}
+
+/* HOPE TO SEE YOU
+--------------------------------------------------------------------- */
+#__see-you .__see-you-wrap {
+	display: flex;
+	gap: 70px;
+}
+#__see-you .__see-you-wrap .__see-you-item {
+	text-align: center;
+}
+#__see-you .__see-you-wrap .__see-you-item img {
+	margin-bottom: 30px;
+}
+#__see-you .__see-you-wrap .__see-you-item .__see-you-title h4 {
+	margin-bottom: 10px;
+	color: #987554;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+}
+#__see-you .__see-you-wrap .__see-you-item .__see-you-title span {
+	font-weight: 200;
+}
+
+/* OTHER DETAILS
+--------------------------------------------------------------------- */
+.__hashtag {
+	color: #987554;
+	font-weight: 500;
+}
+#__other-details .__details-wrap {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 190px;
+	margin-bottom: 110px;
+	background: url(../images/img__divider.png) no-repeat bottom center / 91px;
+}
+#__other-details .__details-wrap .__details-item {
+	padding: 0 1%;
+	max-width: 423px;
+	width: 100%;
+	box-sizing: border-box;
+}
+#__other-details .__details-wrap .__details-item p {
+	line-height: 1.8;
+	text-align: center;
+}
+#__other-details .__attire-color {
+	justify-content: center;
+	gap: 130px;
+}
+#__other-details .__attire-color img {
+	margin-bottom: 30px;
+}
+#__other-details .__love-story .__details-item img {
+	margin: 0 auto 25px;
+	max-width: 230px;
+	width: 80%;
+}
+#__other-details .__love-story .__date {
+	display: block;
+	color: #AC8F75;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+}
+#__other-details .__reminder {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	background-image: none;
+}
+#__other-details .__reminder .__details-item {
+	max-width: none;
+}
+#__other-details .__reminder .__details-item p {
+	font-size: 18px;
+	line-height: 2;
+}
+#__other-details .__reminder .__details-item p span {
+	font-weight: 500;
+}
+
+@media screen and ( max-width : 1070px ) {
+	/* MAIN VISUAL
+	--------------------------------------------------------------------- */
+	#__main-visual .__main-image {
+		padding-top: 100%;
+		height: auto;
+	}
+
+	/* RSVP
+	--------------------------------------------------------------------- */
+	#__rsvp .__container {
+		align-items: baseline;
+		justify-content: start;
+		flex-direction: column;
+	}
+	#__rsvp .__container .btn__rsvp {
+		margin-top: 30px;
+	}
+}
+
+@media screen and ( max-width : 768px ) {
+	/* MAIN STYLE
+	--------------------------------------------------------------------- */
+	.__section {
+		padding: 100px 0;
+	}
+	.__main-title {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+		background-size: 160px;
+	}
+	.__main-title .__title-sm {
+		font-size: 115%;
+	}
+	.__main-title .__title-lg {
+		font-size: 250%;
+	}
+	.__secondary-title {
+		margin-bottom: 15px;
+		font-size: 150%;
+	}
+
+	/* MAIN VISUAL
+	--------------------------------------------------------------------- */
+	.__title-logo {
+		margin: 30px 0;
+		font-size: 250%;
+	}
+	#__main-visual .__main-image {
+		padding-top: 0;
+		height: 380px;
+	}
+
+	/* RSVP
+	--------------------------------------------------------------------- */
+	#__rsvp {
+		padding: 40px 0;
+	}
+	#__rsvp .__container .__text-rsvp {
+		text-align: center;
+	}
+	#__rsvp .__container .__text-rsvp .__title-sm {
+		font-size: 200%;
+	}
+	#__rsvp .__container .__text-rsvp p {
+		font-size: 115%;
+	}
+	#__rsvp .__container .btn__rsvp {
+		padding: 15px;
+		margin: 30px auto 0;
+		max-width: 200px;
+	}
+
+	/* ENTOURAGE
+	--------------------------------------------------------------------- */
+	#__entourage .__entourage-wrap .__entourage-items:not( :last-child ) {
+		margin-bottom: 30px;
+	}
+	#__secondary-sponsors .__entourage-list li {
+		margin-bottom: 20px;
+	}
+
+	/* HOPE TO SEE YOU
+	--------------------------------------------------------------------- */
+	#__see-you .__see-you-wrap {
+		gap: 35px;
+	}
+	#__see-you .__see-you-wrap .__see-you-item img {
+		margin-bottom: 20px;
+	}
+
+	/* OTHER DETAILS
+	--------------------------------------------------------------------- */
+	#__other-details .__details-wrap {
+		padding-bottom: 120px;
+		margin-bottom: 70px;
+		background-size: 71px;
+	}
+	#__other-details .__attire-color {
+		gap: 50px;
+	}
+}
+
+@media screen and ( max-width : 640px ) {
+	/* MAIN STYLE
+	--------------------------------------------------------------------- */
+	.__section {
+		padding: 70px 0;
+	}
+	.__main-title {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		background-size: 130px;
+	}
+	.__main-title .__title-sm {
+		font-size: 110%;
+	}
+	.__main-title .__title-lg {
+		font-size: 180%;
+	}
+	.__secondary-title {
+		font-size: 130%;
+	}
+	br.__pc {
+		display: none;
+	}
+
+	/* MAIN VISUAL
+	--------------------------------------------------------------------- */
+	.__title-logo {
+		margin: 20px 0;
+		font-size: 220%;
+	}
+
+	/* RSVP
+	--------------------------------------------------------------------- */
+	#__rsvp {
+		padding: 30px 0;
+	}
+	#__rsvp .__container .__text-rsvp .__title-sm {
+		font-size: 170%;
+	}
+	#__rsvp .__container .__text-rsvp p {
+		font-size: 110%;
+	}
+	#__rsvp .__container .btn__rsvp {
+		padding: 13px;
+		margin-top: 20px;
+		max-width: 180px;
+	}
+
+	/* ENTOURAGE
+	--------------------------------------------------------------------- */
+	#__entourage .__entourage-wrap .__entourage-items:not( :last-child ) {
+		margin-bottom: 20px;
+	}
+	#__secondary-sponsors .__entourage-list li {
+		margin-bottom: 15px;
+	}
+
+	/* HOPE TO SEE YOU
+	--------------------------------------------------------------------- */
+	#__see-you .__see-you-wrap {
+		flex-direction: column;
+		gap: 35px;
+	}
+	#__see-you .__see-you-wrap .__see-you-item img {
+		margin-bottom: 15px;
+	}
+	.__image-bg {
+		height: 340px;
+		background: url(../images/ph__abel-lois02.jpg) no-repeat center / cover;
+	}
+	.__image-bg img {
+		display: none;
+	}
+
+	/* OTHER DETAILS
+	--------------------------------------------------------------------- */
+	#__other-details .__details-wrap {
+		flex-direction: column;
+		padding-bottom: 90px;
+		margin-bottom: 50px;
+		background-size: 51px;
+		gap: 20px;
+	}
+	#__other-details .__details-wrap .__details-item {
+		margin: 0 auto;
+		max-width: none;
+		width: 100%;
+	}
+	#__other-details .__attire-color {
+		gap: 30px;
+	}
+	#__other-details .__attire-color img {
+		margin: 0 auto 10px;
+		width: 70%;
+	}
+	#__other-details .__love-story .__details-item img {
+		max-width: none;
+		width: 40%;
+	}
+	#__other-details .__love-story .__date {
+		font-size: 115%;
+	}
+	#__other-details .__reminder {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	#__other-details .__reminder .__details-item p {
+		font-size: 110%;
+		line-height: 1.7;
+	}
+}
